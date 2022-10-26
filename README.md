@@ -1,15 +1,21 @@
 # quiz
+import random  
+from string import ascii_lowercase
+
+
+
 print('Welcome young demigod to my quiz to see how well you know your history on Greek mythology.') 
 name = ('what is your name? ')
 print('Type in the correct answer for each question')
 
+NUM_QUESTIONS_PER_QUIZ = 5
 QUESTIONS = {
     '1. What was the weakness of Perseus?': [
         'hubris', 'anger', 'love', 'none',
     ],
 
     "2. Who was Perceus's father?": [
-        'Zeus', 'Posidien', 'Ares', 'None of the above',
+        'None of the above', 'Posidien', 'Ares', 'Zeus',
     ],
 
     '3. True or false: Is Hercules spelt correct?': [
@@ -63,4 +69,22 @@ QUESTIONS = {
         'nothing',
     ],
 }
+
+num_questions = min(NUM_QUESTIONS_PER_QUIZ, len(QUESTIONS))
+questions = random.sample
+
+for num, (question, alternatives) in enumerate(QUESTIONS.items(), start=1):
+    print(f"\nQuestion {num}:")
+    print(f'{question}?')
+    correct_answer = alternatives[3]
+    labeled_alternatives = dict(zip(ascii_lowercase, sorted(alternatives)))
+    for label, alternative in labeled_alternatives.items():
+        print(f" {label} {alternative}")
+
+    answer_label = input('\nChoice? ')
+    answer = labeled_alternatives.get(answer_label)
+    if answer == correct_answer:
+        print("correct!")
+    else:
+        print(f"The answer is {correct_answer!r}, not {answer!r}")
 
