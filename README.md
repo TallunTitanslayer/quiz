@@ -21,48 +21,48 @@
 
     '3. True or false: Is Hercules spelt correct?': [
         'True it is spelt like that',
-        'False, it is spelt as Heracles, Hercules is Roman',
+        'Does it matter?',
         "I don't know",
-        "Doesn't matter",
+        'False, it is spelt as Heracles, Hercules is Roman',
     ],
 
     '4. Was Heracles born a god?': [
         'Yes, he was in the movie!',
         'no he was a demigod',
-        'He was a demigod before becoming a god',
         'IDK',
+        'He was a demigod before becoming a god',
     ],
 
     "5. What was Heracles' weakness?": [
-        'Hubris', 'Wrath', 'none', 'none of the above',
+        'Hubris', 'not stated here', 'none', 'wrath',
     ],
 
     '6. Who was Hippolytus?': [
-        'He was a hunter of Artimis',
+        'Not stated here',
         'IDK',
         "He was one of Aphrodite's children",
-        'none of the above',
+        'He was a hunter of Artimis',
     ],
 
     "7. Who was Hippolytus's parents?": [
-        'Theseus and Hippolyta',
+        'Not known',
         'Theseus and Antiope',
         'Hippolyta and Zeus',
-        'none of the above',
+        'Theseus and Hippolyta',
     ],
 
     "8. Why was Theseus and Pirithous stuck in Hades?": [
-        'Pirithous want Persephone, wife of Hades, as his wife',
+        'not known',
         'Because Hades is evil',
         'because they died',
-        'None of the above',
+        'Pirithous wanted Persephone, wife of Hades, as his wife',
     ],
 
     '9. Which relationship was the most stable?': [
         'Zeus and Hera', 
-        'Hades and Persephone',
+        "I don't know, all of the relationships that I know of aren't the most stable.",
         "Ares and aphrodite",
-        'other'
+        'Hades and Persephone',
     ],
     print('and finally')
     "10. Who was Zeus's least favored child ":  [
