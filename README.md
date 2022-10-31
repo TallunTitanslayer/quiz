@@ -21,6 +21,8 @@ QUESTIONS = {
     '3. True or false: Is Hercules spelt correct?': [
         'True it is spelt like that',
         'False, it is spelt as Heracles, Hercules is Roman',
+        "I don't know",
+        "Doesn't matter",
     ],
 
     '4. Was Heracles born a god?': [
@@ -73,6 +75,8 @@ QUESTIONS = {
 num_questions = min(NUM_QUESTIONS_PER_QUIZ, len(QUESTIONS))
 questions = random.sample
 
+
+num_correct = 0
 for num, (question, alternatives) in enumerate(QUESTIONS.items(), start=1):
     print(f"\nQuestion {num}:")
     print(f'{question}?')
@@ -81,6 +85,10 @@ for num, (question, alternatives) in enumerate(QUESTIONS.items(), start=1):
     for label, alternative in labeled_alternatives.items():
         print(f" {label} {alternative}")
 
+    while (answer_label := input("\nChoice? ")) not in labeled_alternatives:
+print(f"Please answer one of {', '.join(labeled_alternatives)}")
+    answer = labeled_alternatives[answer_label]
+
     answer_label = input('\nChoice? ')
     answer = labeled_alternatives.get(answer_label)
     if answer == correct_answer:
@@ -88,3 +96,4 @@ for num, (question, alternatives) in enumerate(QUESTIONS.items(), start=1):
     else:
         print(f"The answer is {correct_answer!r}, not {answer!r}")
 
+return 0
