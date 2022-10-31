@@ -1,15 +1,16 @@
 # quiz
-import random  
-from string import ascii_lowercase
+    import random  
+    from string import ascii_lowercase
+ 
 
 
+    print('Welcome young demigod to my quiz to see how well you know your history on Greek mythology.') 
+    name = ('what is your name? ')
+    print('Type in the correct answer for each question')
 
-print('Welcome young demigod to my quiz to see how well you know your history on Greek mythology.') 
-name = ('what is your name? ')
-print('Type in the correct answer for each question')
+    NUM_QUESTIONS_PER_QUIZ = 5
+    QUESTIONS = {
 
-NUM_QUESTIONS_PER_QUIZ = 5
-QUESTIONS = {
     '1. What was the weakness of Perseus?': [
         'hubris', 'anger', 'love', 'none',
     ],
@@ -70,14 +71,13 @@ QUESTIONS = {
         'a lot of things',
         'nothing',
     ],
-}
+    }
+    num_questions = min(NUM_QUESTIONS_PER_QUIZ, len(QUESTIONS))
+    questions = random.sample
 
-num_questions = min(NUM_QUESTIONS_PER_QUIZ, len(QUESTIONS))
-questions = random.sample
 
-
-num_correct = 0
-for num, (question, alternatives) in enumerate(QUESTIONS.items(), start=1):
+    num_correct = 0
+    for num, (question, alternatives) in enumerate(QUESTIONS.items(), start=1):
     print(f"\nQuestion {num}:")
     print(f'{question}?')
     correct_answer = alternatives[3]
@@ -86,7 +86,7 @@ for num, (question, alternatives) in enumerate(QUESTIONS.items(), start=1):
         print(f" {label} {alternative}")
 
     while (answer_label := input("\nChoice? ")) not in labeled_alternatives:
-print(f"Please answer one of {', '.join(labeled_alternatives)}")
+    print(f"Please answer one of {', '.join(labeled_alternatives)}")
     answer = labeled_alternatives[answer_label]
 
     answer_label = input('\nChoice? ')
