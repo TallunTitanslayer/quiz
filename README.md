@@ -64,12 +64,12 @@
         "Ares and aphrodite",
         'other'
     ],
-
-    '10.what did you learn': [
-        'Most gods/goddesses suck',
-        'Hercules the movie was a lie',
-        'a lot of things',
-        'nothing',
+    print('and finally')
+    "10. Who was Zeus's least favored child ":  [
+        'Hermes',
+        'Athena',
+        'Dionysus',
+        'Ares',
     ],
     }
     num_questions = min(NUM_QUESTIONS_PER_QUIZ, len(QUESTIONS))
