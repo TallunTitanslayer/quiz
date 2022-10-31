@@ -95,4 +95,4 @@ print(f"Please answer one of {', '.join(labeled_alternatives)}")
         print("correct!")
     else:
         print(f"The answer is {correct_answer!r}, not {answer!r}")
- return 0
+        return 0
